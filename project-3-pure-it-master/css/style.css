@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 header{
-    background: #3444C0;
+    /* background: #3444C0; */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
+}
+.topnav{
+    background: #3444c0 !important;
 }
 .top-nav-wrapper{
     width: 80%;
@@ -96,7 +99,7 @@ display: flex;
 } */
 .navbar-all{
     width: 100%;
-    background: rgb(43, 53, 185);
+    background: #4B5BDD;
 }
 .Navbar {
     /* background-color: #46ACC2; */
@@ -142,6 +145,11 @@ display: flex;
     top: 37%;
 
 }
+.Navbar__Link-brand img{
+   width: 50%;
+
+}
+
 
 section{
     padding: 1rem;
@@ -296,6 +304,10 @@ transform: translateY(-10px);
 }
 .prd-info .inf-link a{
     text-decoration: none;
+}
+.heading-img img{
+    width: 100%;
+    height: auto;
 }
 /*footer*/
 footer{
@@ -502,6 +514,22 @@ cursor: pointer;
     float: left;
     width: 23%;
     margin-right: 15px;
+}
+.cont-logo img{
+width: 50px;
+}
+.fed-log img{
+    width: 50px;
+}
+.fed-pure-cnt{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.con-pur-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .all-prd-drp .dropdown button{
     width: 245px;
@@ -830,10 +858,10 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: #ABABAB;
   text-decoration: none;
-}
+} */
 
 a:hover {
   color: #757373;
@@ -1328,6 +1356,143 @@ iframe{
     position: absolute;
     right: 21%;
 }
+.call-pure h3,.fed-pure h3{
+font-size: 24px;
+color: #2c61ae;
+}
+.call-pure p,.fed-pure p{
+font-size: 16px;
+color: #747474;
+}
+.email-sec{
+    display: flex;
+    align-items: center;
+}
+.email-sec .cont-logo img{
+    width: 50px;
+    margin: 2rem;
+    }
+select{
+    width: 100%;
+    height: 40px;
+}
+.form-sec{
+    margin-top: 3rem;
+}
+.form-sec .form-group{
+    margin-bottom: 2rem;
+}
+textarea{
+    width: 100%;
+}
+.complain-img img{
+    width: 70px;
+}
+.complain{
+    display: flex;
+    margin-top: 2rem;
+}
+.comp-txt{
+    margin-left: 2rem;
+    
+}
+.comp-txt p{
+    font-size: 16px;
+    color: #747474;
+}
+.prd-car-img img{
+    widows: 100%;
+    height: 300px;
+}
+.prd-car{
+    margin: 2rem 0;
+}
+.com-btn .btn{
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+}
+.com-btn p{
+    font-size: 16px;
+    color: #747474;
+}
+.certificates{
+    margin-top: 10rem;
+}
+.certificates h2{
+    background: cadetblue;
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+}
+.cer-img img{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+.social-icon{
+    position: fixed;
+    top: 15%;
+    right: 0;
+    z-index: 9998;
+}
+.social-icon ul{
+	padding: initial;
+}
+.social-icon ul li{
+	height: 40px;
+	width: 40px;
+	list-style-type: none;
+	/* padding-left: 12px;
+    padding-top: 6px; */
+    padding: .5rem;
+	/* margin-top: 5px; */
+	color:#fff;
+	background:rgb(31, 30, 30);
+}
+.social-icon img{
+    width: 100%;
+}
+.heading-img{
+    margin-top: 7rem;
+}
+
+.all-buy-now{
+    display: flex;
+    justify-content: space-between;
+}
+.prd-desc h1{
+    font-size: 40px;
+    color: #2c61ae;
+}
+.prd-desc span{
+    font-size: 40px;
+    color: #2c61ae;
+}
+
+.order-desc{
+    background: #E9E9E9;
+}
+.order-desc ul li{
+    list-style: none;
+}
+.all-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+
+}
+.all-btn a{
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+}
+.buy-now{
+    margin-top: 13rem;
+}
+
     @media (max-width:425px){
 
         body{
@@ -1545,6 +1710,58 @@ iframe{
         display: inline-block;
         margin-left: 8.255em;
     }
+    .con-pur-logo{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .fed-pure-cnt{
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .email-sec{
+        flex-direction: column;
+    }
+    .vertical{
+        display: none;
+    }
+    .certified-cnt{
+        display: flex;
+        flex-direction: column;
+    }
+    .certified-body{
+        order: 1;
+    }
+    .certified-img{
+        order: 0;
+    }
+    .after-sales-body{
+        flex-direction: column;
+    }
+    .after-cnt{
+        order: 2;
+    }
+    .after-img{
+        order: 1;
+    }
+    .best-water h2{
+       
+    padding: .5rem;
+   
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    }
+    .heading-img{
+        margin-top: 3rem !important;
+    }
+    .buy-now{
+        margin-top: 4rem !important;
+    }
+    .all-buy-now{
+        flex-direction: column;
+    }
+
   } 
   @media only screen and (max-width: 768px) {
     .Navbar__Items,
